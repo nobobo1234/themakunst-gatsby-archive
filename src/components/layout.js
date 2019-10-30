@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import Header from './header';
+import NavBar from './NavBar';
 
 const Container = styled.div`
     display: flex;
@@ -24,7 +24,7 @@ export default ({ children }) => {
 
     return (
         <Container>
-            <Header siteTitle={data.site.siteMetadata.title} />
+            <NavBar siteTitle={data.site.siteMetadata.title} />
             {children}
         </Container>
     );
