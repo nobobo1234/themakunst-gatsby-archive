@@ -30,7 +30,7 @@ const NavBar = ({ siteTitle }) => (
             {siteTitle}
         </Link>
     </NavTitle>
-    <Select options={options} autoFocus />
+    <Select options={options} autoFocus placeholder="Leerjaar..." />
   </Header>
 )
 
