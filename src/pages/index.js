@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Title from '../components/title';
-import BackgroundImage from '../components/backgroundImage';
-import Info from '../components/info';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import Title from '../components/Title';
+import BackgroundImage from '../components/BackgroundImage';
+import Info from '../components/Info';
 
 const HomeContainer = styled.div`
     display: flex;

@@ -3,25 +3,34 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import Header from './Header'
-import Image from '../image';
-import ThemaKunst from '../../images/thema kunst.jpg';
+import Image from '../Image';
+import ThemaKunst from '../../images/themakunstwit.png';
+import NavTitle from './NavTitle';
+import Select from '../Select';
+
+const options = [
+  { value: '1', label: 'Leerjaar 1' },
+  { value: '2', label: 'Leerjaar 2' },
+  { value: '3', label: 'Leerjaar 3' }
+]
 
 const NavBar = ({ siteTitle }) => (
   <Header>
-    <div style={{ width: '3rem', height: '3rem' }}>
+    <div style={{ height: '90%', width: '5rem' }}>
         <Image src={ThemaKunst} />
     </div>
-    <h1 style={{ margin: 0 }}>
-    <Link
-        to="/"
-        style={{
-        color: `white`,
-        textDecoration: `none`,
-        }}
-    >
-        {siteTitle}
-    </Link>
-    </h1>
+    <NavTitle>
+        <Link
+            to="/"
+            style={{
+            color: `white`,
+            textDecoration: `none`,
+            }}
+        >
+            {siteTitle}
+        </Link>
+    </NavTitle>
+    <Select options={options} autoFocus />
   </Header>
 )
 

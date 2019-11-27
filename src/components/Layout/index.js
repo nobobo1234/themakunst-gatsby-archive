@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import NavBar from './NavBar';
+import NavBar from '../NavBar';
 
 const Container = styled.div`
     display: flex;

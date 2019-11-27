@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import background from '../images/backdrop.jpg';
+import background from '../../images/backdrop.jpg';
 
 export default styled.div`
     background-image: url(${background});
