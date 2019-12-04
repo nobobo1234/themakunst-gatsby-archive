@@ -8,6 +8,6 @@ export default styled.div`
     bottom: 0;
     background-color: rgba(192, 192, 192, 0.7);
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
     text-align: center;
 `;
